@@ -9,7 +9,6 @@ widgets:
 ---
 
 ### Thursday, April 23
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -42,13 +41,11 @@ widgets:
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 
 
 
 ### Friday, April 24
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -111,12 +108,10 @@ widgets:
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 
 
 ### Saturday, April 25
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -179,10 +174,8 @@ widgets:
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 ### Sunday, April 26
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -220,4 +213,3 @@ widgets:
         </tr>
     </tbody>
 </table>
-{% endraw %}

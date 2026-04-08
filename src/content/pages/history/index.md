@@ -20,7 +20,6 @@ The Rendezvous is now the signature event of Appalachian Arts Studio. Each year 
 
  ### 2018 - Joe Rego
 
-{% raw %}
 
 <a class="uk-button uk-button-default" href="#bio-2018" uk-toggle>Read Joe's Story</a>
 

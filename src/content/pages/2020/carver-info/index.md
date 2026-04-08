@@ -17,9 +17,7 @@ The dates for the 2020 Rendezvous is April 23-25 at the former Motion Control bu
 + Registration is $100 for the event
 + Each carver will get a 10x20 space for carving and selling
 
-{% raw %}
 <a class="uk-button uk-button-primary" href="../carver-registration">Register Online</a>
-{% endraw %}
 
 **Directions:**
 
@@ -64,6 +62,4 @@ Again, thank you all for coming and hope we all have a great time.
 The Rendezous Committee
 
 
-{% raw %}
 <a class="uk-button uk-button-primary" href="../carver-registration">Registration</a>
-{% endraw %}

@@ -96,6 +96,4 @@ Our grounds crew is limited; carvers will be responsible for their own carvings 
 
 The Rendezvous is back!
 
-{% raw %}
 <a class="uk-button uk-button-primary" href="../carver-registration">Registration</a>
-{% endraw %}

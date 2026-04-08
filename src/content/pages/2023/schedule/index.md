@@ -19,7 +19,6 @@ Ridgway, PA 15853
 
 Admission: $5 /adult. Kids free!
 
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -52,14 +51,12 @@ Admission: $5 /adult. Kids free!
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 
 ### Thursday, April 27
 
 Admission: $5 /adult. Kids free!
 
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -97,13 +94,11 @@ Admission: $5 /adult. Kids free!
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 ### Friday, April 28
 
 Admission: $5 /adult. Kids free!
 
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -157,7 +152,6 @@ Admission: $5 /adult. Kids free!
         
     </tbody>
 </table>
-{% endraw %}
 
 
 
@@ -165,7 +159,6 @@ Admission: $5 /adult. Kids free!
 
 Admission: $5 /adult. Kids free!
 
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -218,4 +211,3 @@ Admission: $5 /adult. Kids free!
         </tr>
     </tbody>
 </table>
-{% endraw %}

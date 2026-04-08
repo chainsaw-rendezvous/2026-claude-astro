@@ -26,7 +26,6 @@ Fees are non-refundable and must be submitted with the application.
 All vendors are responsible for bringing their own canopy, tables, chairs, and other equipment.
 Appalachian Arts Studio and the owner of the building are not responsible for any lost or stolen items, or injuries. -->
 
-{% raw %}
 
 <div class="uk-grid">
 <p class="uk-margin-large-bottom uk-width-1-3@m">
@@ -196,4 +195,3 @@ Appalachian Arts Studio and the owner of the building are not responsible for an
 <a href='https://www.instagram.com/wbblacksmithing/'>https://www.instagram.com/wbblacksmithing/</a>
 </p>
 </div>
-{% endraw %}

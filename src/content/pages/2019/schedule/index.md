@@ -12,7 +12,6 @@ As we get closer to the event, more details will be added to the event schedule.
 
 
 ### Thursday, April 25
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -45,13 +44,11 @@ As we get closer to the event, more details will be added to the event schedule.
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 
 
 
 ### Friday, April 26
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -99,12 +96,10 @@ As we get closer to the event, more details will be added to the event schedule.
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 
 
 ### Saturday, April 27
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -162,10 +157,8 @@ As we get closer to the event, more details will be added to the event schedule.
         </tr>
     </tbody>
 </table>
-{% endraw %}
 
 ### Sunday, April 28
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -198,4 +191,3 @@ As we get closer to the event, more details will be added to the event schedule.
         </tr>
     </tbody>
 </table>
-{% endraw %}

@@ -14,6 +14,7 @@ Media inquiries should be directed to Isaac McDaniel by email at isaac@zone6.onl
 
 ### How many carvers are participating? Where are they from?
 There are over 130 carvers signed up for 2026 from all over the United States and multiple countries including Canada, Germany, and the United Kingdom.  
+<br>
 
 Here is a [listing of the carvers attending in 2026](./carver-list).
 
@@ -36,12 +37,11 @@ Pieces that carvers work on throughout the week are not being auctioned off. Inq
 Aside from the daily live carving, there will be food and craft vendors, beer/wine/liquor vendors, and live musical entertainment.
 
 ### What happens if it rains?
-The event is rain or shine. Of course we're hoping for shine!
+The event is rain or shine. Of course we're hoping for shine!<br><br>  
 
-Current conditions in Ridgway, PA
-{% raw %}
-<a class="weatherwidget-io" href="https://forecast7.com/en/41d42n78d73/ridgway/?unit=us" data-label**1="RIDGWAY" data-label**2="WEATHER" data-theme="original" >RIDGWAY WEATHER</a>
+Current conditions in Ridgway, PA<br>
+  
+<a class="weatherwidget-io" href="https://forecast7.com/en/41d42n78d73/ridgway/?unit=us" data-label_1="RIDGWAY" data-label_2="WEATHER" data-theme="original" >RIDGWAY WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-{% endraw %}

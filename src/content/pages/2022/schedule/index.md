@@ -19,7 +19,6 @@ Ridgway, PA 15853
 
 Limited onsite parking: $5 /vehicle
 
-{% raw %}
 <table class="uk-table uk-table-divider">
     <caption></caption>
     <thead>
@@ -77,4 +76,3 @@ Limited onsite parking: $5 /vehicle
         </tr>
     </tbody>
 </table>
-{% endraw %}

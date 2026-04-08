@@ -45,9 +45,7 @@ We'll have musical acts throughout the weekend. Check the [schedule](../schedule
 
 ### What happens if it rains?
 The event is rain or shine. Of course we're hoping for shine!
-{% raw %}
 <a class="weatherwidget-io" href="https://forecast7.com/en/41d42n78d73/ridgway/?unit=us" data-label**1="RIDGWAY" data-label**2="WEATHER" data-theme="original" >RIDGWAY WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-{% endraw %}
