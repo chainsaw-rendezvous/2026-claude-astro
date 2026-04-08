@@ -1,0 +1,45 @@
+---
+import ExternalLink from '../ui/ExternalLink.astro';
+---
+
+<footer class="bg-brand-dark text-white py-6">
+  <div class="section-container flex items-center justify-between">
+    <ul class="flex items-center gap-4">
+      <li>
+        <ExternalLink
+          href="https://fb.com/chainsawrendezvous"
+          class="text-white hover:text-gray-300 transition-colors"
+          ariaLabel="Facebook"
+        >
+          <i class="fab fa-facebook fa-2x"></i>
+        </ExternalLink>
+      </li>
+      <li>
+        <ExternalLink
+          href="https://www.youtube.com/user/ridgwayrendezvous"
+          class="text-white hover:text-gray-300 transition-colors"
+          ariaLabel="YouTube"
+        >
+          <i class="fab fa-youtube fa-2x"></i>
+        </ExternalLink>
+      </li>
+      <li>
+        <ExternalLink
+          href="https://snapchat.com/add/chainsaw-vous"
+          class="text-white hover:text-gray-300 transition-colors"
+          ariaLabel="Snapchat"
+        >
+          <i class="fab fa-snapchat-ghost fa-2x"></i>
+        </ExternalLink>
+      </li>
+    </ul>
+
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="text-white hover:text-gray-300 transition-colors"
+      aria-label="Back to top"
+    >
+      <i class="fas fa-chevron-up fa-2x"></i>
+    </button>
+  </div>
+</footer>

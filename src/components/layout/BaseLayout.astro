@@ -1,0 +1,92 @@
+---
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import FooterNav from './FooterNav.astro';
+import Sponsors from '../widgets/Sponsors.astro';
+import '../../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title = 'Chainsaw Carvers Rendezvous',
+  description = 'The Chainsaw Carvers Rendezvous in Ridgway, PA — Live carving, vendors, food, and entertainment.',
+  ogImage = '/assets/2019/hero-slides/2018-quick-carve.jpg',
+} = Astro.props;
+
+const siteUrl = 'https://chainsawrendezvous.org';
+const GA_ID = 'UA-25701668-1';
+const FB_PIXEL_ID = '614306862351411';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/00b6a39de7.js" crossorigin="anonymous"></script>
+
+    <!-- Add to Calendar Button CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2/assets/css/atcb.min.css" />
+
+    <!-- Facebook Pixel -->
+    <script define:vars={{ FB_PIXEL_ID }}>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', FB_PIXEL_ID);
+      fbq('track', 'PageView');
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+    <script define:vars={{ GA_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    </script>
+  </head>
+  <body class="font-sans text-gray-800 bg-white">
+    <script>fbq('track', 'ViewContent');</script>
+
+    <Nav />
+
+    <main>
+      <slot />
+    </main>
+
+    <Sponsors />
+    <FooterNav />
+    <Footer />
+
+    <!-- Add to Calendar Button JS -->
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+
+    <!-- Instant page prefetch -->
+    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+---
+---
+
+<section class="py-12 bg-brand-tan" id="tc-email-newsletter">
+  <div class="max-w-7xl mx-auto px-4">
+    <p class="text-white text-xl font-semibold mb-4">
+      Get the latest buzz by signing up for the newsletter
+    </p>
+    <form
+      action="https://m.chainsawrendezvous.org/subscribe"
+      method="POST"
+      accept-charset="utf-8"
+      class="flex flex-col sm:flex-row gap-3 max-w-lg"
+    >
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email Address"
+        aria-label="Email Address"
+        required
+        class="flex-1 px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 border-0 focus:ring-2 focus:ring-white focus:outline-none"
+      />
+      <button
+        type="submit"
+        name="submit"
+        class="px-6 py-3 bg-white text-brand-tan font-semibold rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap"
+      >
+        Subscribe
+      </button>
+      <!-- Honeypot -->
+      <div style="display:none;">
+        <label for="hp">HP</label>
+        <input type="text" name="hp" id="hp" />
+      </div>
+      <input type="hidden" name="list" value="RaQ763DkBdahlj763ansE4044g" />
+      <input type="hidden" name="subform" value="yes" />
+    </form>
+  </div>
+</section>

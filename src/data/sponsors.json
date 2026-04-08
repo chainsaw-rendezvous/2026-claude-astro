@@ -1,0 +1,19 @@
+[
+  { "level": 1, "href": "https://appalachian-arts.com/", "img": "/assets/2019/sponsors/app-arts.png", "alt": "Appalachian Arts Studio" },
+  { "level": 1, "href": "https://www.arts.pa.gov/", "img": "/assets/2024/sponsors/PCA.jpg", "alt": "Pennsylvania Council on the Arts" },
+  { "level": 2, "href": "http://www.ridgwayborough.com", "img": "/assets/2019/sponsors/ridgway-borough.png", "alt": "Ridgway Borough" },
+  { "level": 2, "href": "https://www.eccota.com/", "img": "/assets/2024/sponsors/eccota.gif", "alt": "Elk County Council on the Arts" },
+  { "level": 3, "href": "https://changeyouroil.com/", "img": "/assets/2026/sponsors/DGP.png", "alt": "Dynamic Green Products" },
+  { "level": 3, "href": "http://www.royalinnpa.com/", "img": "/assets/2019/sponsors/royal-inn.png", "alt": "Royal Inn" },
+  { "level": 3, "href": "https://lumberheritage.org/", "img": "/assets/2019/sponsors/lumber-heritage.png", "alt": "The Lumber Heritage Region" },
+  { "level": 3, "href": "https://www.stihlusa.com/", "img": "/assets/2019/sponsors/stihl.png", "alt": "Stihl" },
+  { "level": 3, "href": "https://nobleenviro.com/greentree-landfill/", "img": "/assets/2026/sponsors/noble-enviro.svg", "alt": "Noble Environmental - Green Tree Landfill" },
+  { "level": 3, "href": "https://www.elkcountyfoods.com/", "img": "/assets/2019/sponsors/elk-county-foods.png", "alt": "Elk County Foods" },
+  { "level": 3, "href": "https://www.natfuel.com/seneca/", "img": "/assets/2019/sponsors/seneca-resources.png", "alt": "Seneca Resources" },
+  { "level": 4, "href": "http://straubbeer.com/", "img": "/assets/2019/sponsors/straub.png", "alt": "Straub Brewery" },
+  { "level": 4, "href": "https://www.facebook.com/Foxportablesawmill/", "img": "/assets/2022/sponsors/fox-sawmill.png", "alt": "Fox Sawmill and Custom Designs" },
+  { "level": 4, "href": "https://www.visitpago.com", "img": "/assets/2024/sponsors/PAGO_2023version.jpeg", "alt": "PA Great Outdoors" },
+  { "level": 4, "href": "https://www.wm.com/", "img": "/assets/2022/sponsors/waste-management.gif", "alt": "Waste Management" },
+  { "level": 4, "href": "https://www.ridgwaychamber.com/", "img": "/assets/2024/sponsors/Ridgway-Chamber-logo.png", "alt": "Elk County Chamber of Commerce" },
+  { "level": 4, "href": "https://kutzall.com/", "img": "/assets/2026/sponsors/kutzall.png", "alt": "Kutzall Power Carving" }
+]

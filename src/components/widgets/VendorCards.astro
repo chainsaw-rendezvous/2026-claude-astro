@@ -1,0 +1,101 @@
+---
+import ExternalLink from '../ui/ExternalLink.astro';
+
+interface Props {
+  year?: number;
+  maxCount?: number;
+  sort?: string | string[];
+}
+
+let { year, maxCount, sort } = Astro.props;
+
+const vendorFiles = import.meta.glob<{ default: any[] }>('../../data/*-vendors.json', { eager: true });
+const vendorDataMap: Record<number, any[]> = {};
+for (const [path, mod] of Object.entries(vendorFiles)) {
+  const m = path.match(/(\d{4})-vendors\.json$/);
+  if (m) vendorDataMap[Number(m[1])] = mod.default ?? (mod as any);
+}
+
+let resolvedYear = year ? Number(year) : null;
+if (!resolvedYear) {
+  const now = new Date().getFullYear();
+  resolvedYear = vendorDataMap[now] ? now : now + 1;
+}
+
+let vendorData = vendorDataMap[resolvedYear] ? [...vendorDataMap[resolvedYear]] : [];
+const dataAvailable = vendorData.length > 0;
+
+if (dataAvailable) {
+  const sortParam = Array.isArray(sort) ? sort[0] : sort;
+  if (sortParam === 'random') {
+    for (let i = vendorData.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [vendorData[i], vendorData[j]] = [vendorData[j], vendorData[i]];
+    }
+  } else if (sortParam === 'asc' || sortParam === 'desc') {
+    vendorData.sort((a, b) => {
+      const cmp = (a.organization || '').localeCompare(b.organization || '');
+      return sortParam === 'desc' ? -cmp : cmp;
+    });
+  }
+  const count = maxCount
+    ? Math.min(Math.max(1, Number(maxCount)), vendorData.length)
+    : vendorData.length;
+  vendorData = vendorData.slice(0, count);
+}
+
+const typeColors: Record<string, string> = {
+  Food: 'bg-orange-600',
+  Beverage: 'bg-blue-700',
+  Retail: 'bg-green-700',
+  'Arts & Crafts': 'bg-purple-700',
+};
+---
+
+{dataAvailable && (
+  <section class="py-12 bg-white" id="tc-vendors-attending">
+    <div class="section-container">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+        Vendors attending in {resolvedYear}
+      </h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {vendorData.map((vendor) => (
+          <div class="card border border-gray-200 p-5">
+            <p class="mb-2">
+              <span class:list={[
+                'inline-block text-white text-xs font-semibold px-2 py-1 rounded',
+                typeColors[vendor.type] || 'bg-indigo-700'
+              ]}>
+                {vendor.type}
+              </span>
+            </p>
+            <h4 class="font-bold text-gray-900 text-lg mb-2">{vendor.organization}</h4>
+            {vendor.description && (
+              <p class="text-gray-600 text-sm mb-3">{vendor.description}</p>
+            )}
+            {vendor.payment && (
+              <p class="text-gray-500 text-xs mb-3">
+                <strong>Payment:</strong> {vendor.payment}
+              </p>
+            )}
+            {vendor.links && typeof vendor.links === 'object' && Object.keys(vendor.links).length > 0 && (
+              <div class="flex gap-3">
+                {Object.values(vendor.links).map((link: any) =>
+                  link.link ? (
+                    <ExternalLink
+                      href={link.link}
+                      class="text-brand-tan hover:text-brand-tan-light transition-colors"
+                    >
+                      <i class:list={[link.icon || 'fa-solid fa-link', 'text-lg']}></i>
+                    </ExternalLink>
+                  ) : null
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

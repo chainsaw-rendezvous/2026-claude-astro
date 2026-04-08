@@ -1,0 +1,125 @@
+---
+import ExternalLink from '../ui/ExternalLink.astro';
+
+interface Props {
+  year?: number;
+  maxCount?: number;
+  sort?: string | string[];
+}
+
+let { year, maxCount, sort } = Astro.props;
+
+const carverFiles = import.meta.glob<{ default: any[] }>('../../data/*-carvers.json', { eager: true });
+const carverDataMap: Record<number, any[]> = {};
+for (const [path, mod] of Object.entries(carverFiles)) {
+  const m = path.match(/(\d{4})-carvers\.json$/);
+  if (m) carverDataMap[Number(m[1])] = mod.default ?? (mod as any);
+}
+
+// Resolve year: if not specified, try current year then next year
+let resolvedYear = year ? Number(year) : null;
+if (!resolvedYear) {
+  const now = new Date().getFullYear();
+  resolvedYear = carverDataMap[now] ? now : now + 1;
+}
+
+let carverData = carverDataMap[resolvedYear] ? [...carverDataMap[resolvedYear]] : [];
+const dataAvailable = carverData.length > 0;
+
+if (dataAvailable) {
+  // sort can be:
+  //   'random'                    → shuffle
+  //   ['name-last', 'name-first'] → sort by those fields in order (like lodash sortBy)
+  //   'by-name-last'              → sort by last name only
+  const sortIsRandom =
+    sort === 'random' ||
+    (Array.isArray(sort) && sort.length === 1 && sort[0] === 'random');
+
+  if (sortIsRandom) {
+    for (let i = carverData.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [carverData[i], carverData[j]] = [carverData[j], carverData[i]];
+    }
+  } else if (Array.isArray(sort) && sort.length > 0) {
+    carverData.sort((a, b) => {
+      for (const field of sort) {
+        const cmp = (a[field] || '').localeCompare(b[field] || '');
+        if (cmp !== 0) return cmp;
+      }
+      return 0;
+    });
+  } else if (sort === 'by-name-last') {
+    carverData.sort((a, b) => (a['name-last'] || '').localeCompare(b['name-last'] || ''));
+  } else if (sort === 'by-name-first') {
+    carverData.sort((a, b) => (a['name-first'] || '').localeCompare(b['name-first'] || ''));
+  }
+
+  const count = maxCount
+    ? Math.min(Math.max(1, Number(maxCount)), carverData.length)
+    : carverData.length;
+  carverData = carverData.slice(0, count);
+}
+
+const showViewAll = maxCount && Number(maxCount) < (carverDataMap[resolvedYear]?.length ?? 0);
+---
+
+{dataAvailable && (
+  <section class="py-12 bg-gray-50" id="tc-carvers-attending">
+    <div class="section-container">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+        {showViewAll
+          ? `Just a few of the carvers attending in ${resolvedYear}`
+          : `Carvers attending in ${resolvedYear}`}
+      </h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {carverData.map((carver) => (
+          <div class="card">
+            <div class="member-photo">
+              <img
+                src={carver.image
+                  ? `/assets/${resolvedYear}/carvers/${carver.image}`
+                  : `/assets/${resolvedYear}/carvers/no-image.png`}
+                alt={`${carver['name-first']} ${carver['name-last']}`}
+                class="w-full aspect-square object-cover"
+                loading="lazy"
+              />
+              {carver.links && typeof carver.links === 'object' && Object.keys(carver.links).length > 0 && (
+                <div class="member-icons">
+                  {Object.values(carver.links).map((link: any) =>
+                    link && link.link ? (
+                      <ExternalLink href={link.link} class="text-white">
+                        <i class:list={[link.icon || 'fas fa-link']}></i>
+                      </ExternalLink>
+                    ) : null
+                  )}
+                </div>
+              )}
+            </div>
+            <div class="p-3 text-center">
+              <h3 class="font-semibold text-gray-900 text-sm">
+                {`${carver['name-first']} ${carver['name-last']}`}
+              </h3>
+              {carver['name-nickname'] && (
+                <p class="text-brand-tan text-xs">"{carver['name-nickname']}"</p>
+              )}
+              {carver['state']
+                ? <p class="text-gray-500 text-xs">{carver['state']}</p>
+                : carver['country']
+                ? <p class="text-gray-500 text-xs">{carver['country']}</p>
+                : null}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {showViewAll && (
+        <div class="text-center mt-10">
+          <a href={`/${resolvedYear}/carvers`} class="btn-primary">
+            View all the carvers
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+)}

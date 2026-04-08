@@ -1,0 +1,32 @@
+---
+interface Props {
+  preheader?: string;
+  title?: string;
+  subheader?: string;
+  lead?: string;
+}
+
+const { preheader, title, subheader, lead } = Astro.props;
+---
+
+<section class="py-12 bg-white" id="tc-content">
+  <div class="section-container">
+    <div class="max-w-3xl">
+      {preheader && (
+        <p class="text-brand-tan font-semibold text-sm uppercase tracking-widest mb-1">{preheader}</p>
+      )}
+      {title && (
+        <h1 class:list={["text-3xl md:text-4xl font-bold text-gray-900", subheader ? "mb-1" : "mb-6"]}>{title}</h1>
+      )}
+      {subheader && (
+        <h2 class="text-xl font-semibold text-brand-tan mb-6">{subheader}</h2>
+      )}
+      {lead && (
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">{lead}</p>
+      )}
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>

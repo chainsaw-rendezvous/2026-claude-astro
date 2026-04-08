@@ -1,0 +1,70 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Hero from '../components/widgets/Hero.astro';
+import Content from '../components/widgets/Content.astro';
+import CarverCards from '../components/widgets/CarverCards.astro';
+import CarverList from '../components/widgets/CarverList.astro';
+import VendorCards from '../components/widgets/VendorCards.astro';
+import EmailForm from '../components/widgets/EmailForm.astro';
+import EventHighlights from '../components/widgets/EventHighlights.astro';
+import DonationButton from '../components/widgets/DonationButton.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages
+    .map((page) => {
+      // "2026/schedule/index.md" → "2026/schedule", "index.md" → ""
+      const slug = page.id
+        .replace(/\/index\.md$/, '')
+        .replace(/\/index$/, '')
+        .replace(/\.md$/, '');
+      return { params: { slug: slug || undefined }, props: { page } };
+    })
+    // Exclude root index (handled by src/pages/index.astro)
+    .filter(({ params }) => params.slug !== undefined && params.slug !== '' && params.slug !== 'index');
+}
+
+const { page } = Astro.props;
+const { Content: RenderedContent } = await render(page);
+const { title, preheader, subheader, lead, widgets } = page.data;
+
+// Parse widgets: entry is either "widgetName" or { widgetName: { ...props } }
+function parseWidgets(list) {
+  if (!list) return [];
+  return list.map((w) => {
+    if (typeof w === 'string') return { name: w, props: {} };
+    const key = Object.keys(w)[0];
+    return { name: key, props: w[key] ?? {} };
+  });
+}
+
+const parsedWidgets = parseWidgets(widgets);
+const hasWidgets = parsedWidgets.length > 0;
+---
+
+<BaseLayout title={title ? `${title} | Chainsaw Carvers Rendezvous` : 'Chainsaw Carvers Rendezvous'}>
+
+  {hasWidgets ? (
+    parsedWidgets.map(({ name, props }) =>
+      name === 'hero' ? <Hero /> :
+      name === 'content' ? (
+        <Content preheader={preheader} title={title} subheader={subheader} lead={lead}>
+          <RenderedContent />
+        </Content>
+      ) :
+      name === 'carver-cards' ? <CarverCards {...props} /> :
+      name === 'carvers-list' ? <CarverList {...props} /> :
+      name === 'vendor-cards-new' ? <VendorCards {...props} /> :
+      name === 'email-form' ? <EmailForm /> :
+      name === 'event-highlights' ? <EventHighlights /> :
+      name === 'donation-button' ? <DonationButton /> :
+      null
+    )
+  ) : (
+    <Content preheader={preheader} title={title} subheader={subheader} lead={lead}>
+      <RenderedContent />
+    </Content>
+  )}
+
+</BaseLayout>

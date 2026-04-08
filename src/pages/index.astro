@@ -1,0 +1,41 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Hero from '../components/widgets/Hero.astro';
+import Content from '../components/widgets/Content.astro';
+import CarverCards from '../components/widgets/CarverCards.astro';
+import EmailForm from '../components/widgets/EmailForm.astro';
+import EventHighlights from '../components/widgets/EventHighlights.astro';
+import DonationButton from '../components/widgets/DonationButton.astro';
+
+const entry = await getEntry('pages', 'index');
+const { Content: RenderedContent } = await render(entry);
+const { title, preheader, subheader, lead, widgets } = entry.data;
+
+function parseWidgets(list) {
+  if (!list) return [];
+  return list.map((w) => {
+    if (typeof w === 'string') return { name: w, props: {} };
+    const key = Object.keys(w)[0];
+    return { name: key, props: w[key] ?? {} };
+  });
+}
+
+const parsedWidgets = parseWidgets(widgets);
+---
+
+<BaseLayout title="Chainsaw Carvers Rendezvous">
+  {parsedWidgets.map(({ name, props }) =>
+    name === 'hero' ? <Hero /> :
+    name === 'content' ? (
+      <Content preheader={preheader} title={title} subheader={subheader} lead={lead}>
+        <RenderedContent />
+      </Content>
+    ) :
+    name === 'carver-cards' ? <CarverCards {...props} /> :
+    name === 'email-form' ? <EmailForm /> :
+    name === 'event-highlights' ? <EventHighlights /> :
+    name === 'donation-button' ? <DonationButton /> :
+    null
+  )}
+</BaseLayout>

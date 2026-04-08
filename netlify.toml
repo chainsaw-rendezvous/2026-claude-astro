@@ -1,0 +1,47 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[dev]
+  framework = "astro"
+  command = "npm run dev"
+
+[[redirects]]
+  from = "/schedule"
+  to = "/2026/schedule"
+  status = 302
+
+[[redirects]]
+  from = "/map"
+  to = "/2026/map"
+  status = 302
+
+[[redirects]]
+  from = "/carvers"
+  to = "/2026/carvers"
+  status = 302
+
+[[redirects]]
+  from = "/carver-info"
+  to = "/2026/carver-info"
+  status = 302
+
+[[redirects]]
+  from = "/vendor-info"
+  to = "/2026/vendor-info"
+  status = 302
+
+[[redirects]]
+  from = "/vendors"
+  to = "/2026/vendor-info"
+  status = 302
+
+[[redirects]]
+  from = "/sponsors"
+  to = "/2026/sponsor-info"
+  status = 302
+
+[[redirects]]
+  from = "/media"
+  to = "/2026/media-info"
+  status = 302

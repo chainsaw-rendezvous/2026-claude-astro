@@ -1,0 +1,97 @@
+---
+import ExternalLink from '../ui/ExternalLink.astro';
+
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Carvers', href: '/carvers' },
+  { label: 'Schedule', href: '/schedule' },
+  { label: 'Vendors', href: '/vendors' },
+  { label: 'History', href: '/history' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-brand-tan shadow-md">
+  <div class="section-container">
+    <nav class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0">
+        <img
+          src="/assets/2018-logo.svg"
+          alt="Chainsaw Carvers Rendezvous"
+          width="220"
+          height="48"
+          class="h-12 w-auto"
+        />
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="hidden md:flex items-center gap-1">
+        {navLinks.map((link) => (
+          <li>
+            <a href={link.href} class="nav-link">
+              {link.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <ExternalLink
+            href="https://fb.com/chainsawrendezvous"
+            class="px-3 py-2 text-white hover:bg-white/20 rounded transition-colors"
+            ariaLabel="Facebook"
+          >
+            <i class="fab fa-facebook-f text-lg"></i>
+          </ExternalLink>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="menu-toggle"
+        class="md:hidden text-white p-2 rounded hover:bg-white/20 transition-colors"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-brand-tan border-t border-white/20"
+    aria-hidden="true"
+  >
+    <ul class="px-4 pb-4 pt-2 flex flex-col gap-1">
+      {navLinks.map((link) => (
+        <li>
+          <a href={link.href} class="block nav-link">
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <ExternalLink
+          href="https://fb.com/chainsawrendezvous"
+          class="flex items-center gap-2 nav-link"
+        >
+          <i class="fab fa-facebook-f"></i> Facebook
+        </ExternalLink>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden', isOpen);
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    menu?.setAttribute('aria-hidden', String(isOpen));
+  });
+</script>

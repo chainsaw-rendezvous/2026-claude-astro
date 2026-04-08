@@ -1,0 +1,77 @@
+---
+// Props: year (number), sort (string or array)
+let { year, sort } = Astro.props;
+
+import carvers2018 from '../../data/2018-carvers.json';
+import carvers2019 from '../../data/2019-carvers.json';
+import carvers2020 from '../../data/2020-carvers.json';
+import carvers2022 from '../../data/2022-carvers.json';
+import carvers2023 from '../../data/2023-carvers.json';
+import carvers2024 from '../../data/2024-carvers.json';
+import carvers2025 from '../../data/2025-carvers.json';
+import carvers2026 from '../../data/2026-carvers.json';
+
+const carverDataMap = {
+  2018: carvers2018,
+  2019: carvers2019,
+  2020: carvers2020,
+  2022: carvers2022,
+  2023: carvers2023,
+  2024: carvers2024,
+  2025: carvers2025,
+  2026: carvers2026,
+};
+
+let resolvedYear = year ? Number(year) : null;
+if (!resolvedYear) {
+  const now = new Date().getFullYear();
+  resolvedYear = carverDataMap[now] ? now : now + 1;
+}
+
+let carverData = carverDataMap[resolvedYear] ? [...carverDataMap[resolvedYear]] : [];
+
+// Default sort: last name then first name
+const sortFields = Array.isArray(sort) && sort.length > 0
+  ? sort
+  : ['name-last', 'name-first'];
+
+carverData.sort((a, b) => {
+  for (const field of sortFields) {
+    const cmp = (a[field] || '').localeCompare(b[field] || '');
+    if (cmp !== 0) return cmp;
+  }
+  return 0;
+});
+---
+
+{carverData.length > 0 && (
+  <section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="overflow-x-auto rounded-xl shadow-sm border border-gray-200">
+        <table class="w-full text-sm text-left text-gray-700">
+          <thead class="bg-gray-100 text-gray-600 uppercase text-xs tracking-wider">
+            <tr>
+              <th class="px-4 py-3">First Name</th>
+              <th class="px-4 py-3">Last Name</th>
+              <th class="px-4 py-3">City</th>
+              <th class="px-4 py-3">State</th>
+              <th class="px-4 py-3">Country</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            {carverData.map((carver, i) => (
+              <tr class={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                <td class="px-4 py-2">{carver['name-first'] || ''}</td>
+                <td class="px-4 py-2 font-medium">{carver['name-last'] || ''}</td>
+                <td class="px-4 py-2">{carver['city'] || ''}</td>
+                <td class="px-4 py-2">{carver['state'] || ''}</td>
+                <td class="px-4 py-2">{carver['country'] || ''}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center text-gray-500 text-xs mt-4">{carverData.length} carvers</p>
+    </div>
+  </section>
+)}

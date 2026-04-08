@@ -1,0 +1,107 @@
+[
+   {
+      "name": "Matt Silvia",
+      "subname": false,
+      "bio": "In 2018 Matt moved across the country from California to Ridgway. He's a veteran musician with over 30 years experience and recently has been performing with John Butterfuss, Charlie Jacques, Guitar Club, and Muzical Romance. This is his second appearance at the Rendezvous.",
+      "image": "matt-silvia.jpg",
+      "start": "2020-04-25 11:00",
+      "links": false
+   },
+   {
+      "name": "Christopher Dale",
+      "subname": false,
+      "bio": "Spawning from San Diego’s premier singer/songwriter venue Java Joe’s with the likes of Jewel and Jason Mraz and described as McCartney & John Mayer meet Neil Young & Tom Petty at a Jimmy Buffet concert, Christopher Dale mixes his many influences together to form one uniquely engaging artist. As a traveling troubadour he captures your attention with his honesty, heart and fun-loving energy as he mixes catchy songwriting, a remarkable vocal range and candid storytelling with an unparalleled devotion to entertain the audience.",
+      "image": "christopher-dale.jpg",
+      "start": "2020-04-25 12:00",
+      "links": {
+         "Website": {
+            "link": "https://www.christopherdalemusic.com/",
+            "icon": "fas fa-globe"
+         },
+         "Facebook": {
+            "link": "http://www.facebook.com/christopherdalemusic",
+            "icon": "fab fa-facebook-f"
+         },
+         "YouTube": {
+            "link": "http://www.youtube.com/user/christopherdalemusic",
+            "icon": "fab fa-youtube"
+         },
+         "Reverb Nation": {
+            "link": "https://www.reverbnation.com/christopherdale",
+            "icon": "fas fa-music"
+         }
+      }
+   },
+   {
+      "name": "Still Kickin'",
+      "subname": false,
+      "bio": false,
+      "image": "still-kickin.jpg",
+      "start": "2020-04-25 14:00",
+      "links": false
+   },
+   {
+     "name": "Cindy McMuray",
+     "subname": false,
+     "bio": false,
+     "image": false,
+     "start": "2020-04-24 13:00",
+     "links": false
+   },
+   {
+     "name": "Ian Unwired",
+     "subname": false,
+     "bio": "Singer/songwriter Ian Kucenski has played in numerous bands for over a decade now including: Losing Face, Battle Axe, Electric Foreplay, and is currently a solo acoustic project. If you're a fan of various styles of rock music you will want to check out Ian's performance.",
+     "image": "ian-unwired.jpg",
+     "start": "2020-04-24 17:00",
+     "links": false
+   },
+   {
+     "name": "Bob Dietz",
+     "subname": false,
+     "bio": false,
+     "image": false,
+     "start": "2020-04-25 15:00",
+     "links": false
+   },
+   {
+      "name": "Nick Forsythe",
+      "subname": false,
+      "bio": false,
+      "image": false,
+      "start": "2020-04-24 12:00",
+      "links": false
+   },
+   {
+      "name": "Paolello & Gone",
+      "subname": false,
+      "bio": false,
+      "image": false,
+      "start": "2020-04-24 15:00",
+      "links": false
+   },
+   {
+      "name": "Irelynn Fink",
+      "subname": false,
+      "bio": false,
+      "image": false,
+      "start": "2020-04-24 14:00",
+      "links": false
+   },
+   {
+      "name": "Rob Simbeck",
+      "subname": false,
+      "bio": "Rob has played on stages from New York to Los Angeles and has been part of Nashville's music scene for decades. He has performed at the Bluebird Café and had songs published by Sony/Tree and Combine/EMI, with cuts by artists ranging from Charley Pride to Gretchen Wilson. He joined his first band at the age of 12 in his native St. Marys and continues to perform a mix of classic rock and country.",
+      "image": false,
+      "start": "2020-04-25 13:00",
+      "links": false
+   },
+   {
+      "name": "Musical Romanz",
+      "subname": false,
+      "bio": false,
+      "image": false,
+      "start": "2020-04-25 16:00",
+      "links": false
+   }
+]

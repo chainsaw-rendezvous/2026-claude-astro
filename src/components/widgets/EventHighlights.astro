@@ -1,0 +1,65 @@
+---
+import { event } from '../../config/event';
+---
+
+<section class="py-12 bg-gray-800 text-white" id="tc-event-highlights">
+  <div class="section-container">
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Calendar CTA -->
+      <div>
+        <h3 class="text-2xl font-bold mb-3">Don't Miss Out</h3>
+        <p class="text-gray-300 mb-6">
+          This is an event you'll want to mark in your calendar and invite all your friends to attend.
+        </p>
+        <add-to-calendar-button
+          name={event.name}
+          options="'Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo'"
+          location={event.location.full}
+          startDate={event.startDate}
+          endDate={event.endDate}
+          description="The Rendezvous returns to Ridgway, PA[br]Event site: [url]https://chainsawrendezvous.org[/url][br]Schedule: [url]https://chainsawrendezvous.org/schedule[/url][br]Carvers attending: [url]https://chainsawrendezvous.org/carvers[/url]"
+          iCalFileName={event.location.iCalFileName}
+        ></add-to-calendar-button>
+      </div>
+
+      <!-- Event highlight cards -->
+      <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+        <!-- Vendors -->
+        <div>
+          <div class="event-highlight-img rounded-xl overflow-hidden mb-3">
+            <img
+              src="/assets/2019/ridgway-courthouse.jpg"
+              alt="Elk County Courthouse"
+            />
+            <div class="event-highlight-overlay rounded-xl">
+              <h3 class="text-lg font-bold mb-1">Food, Arts &amp; Crafts</h3>
+              <p class="text-sm mb-3">Feed your appetite and support local crafters</p>
+              <a href={event.paths.vendorInfo} class="inline-flex items-center gap-2 text-sm font-semibold text-white underline hover:no-underline">
+                <i class="fas fa-tag"></i> Who's Attending
+              </a>
+            </div>
+          </div>
+          <h3 class="font-semibold text-gray-100">Vendors</h3>
+        </div>
+
+        <!-- Entertainment -->
+        <div>
+          <div class="event-highlight-img rounded-xl overflow-hidden mb-3">
+            <img
+              src="/assets/2022/hero-slides/guitar-painting-rick-boni.jpg"
+              alt="Guitarist Painting by Rick Boni"
+            />
+            <div class="event-highlight-overlay rounded-xl">
+              <h3 class="text-lg font-bold mb-1">Musical Entertainment</h3>
+              <p class="text-sm mb-3">Line-up of talented musical performers on Friday and Saturday</p>
+              <a href={event.paths.schedule} class="inline-flex items-center gap-2 text-sm font-semibold text-white underline hover:no-underline">
+                <i class="fas fa-music"></i> Schedule
+              </a>
+            </div>
+          </div>
+          <h3 class="font-semibold text-gray-100">Entertainment</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
