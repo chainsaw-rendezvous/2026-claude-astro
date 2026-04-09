@@ -34,7 +34,11 @@ An auction will be held on Saturday afternoon following a quick carve event. Pie
 Pieces that carvers work on throughout the week are not being auctioned off. Inquire with the carver directly for their plans for that piece.
 
 ### Are there other activities happening during the event?
-Aside from the daily live carving, there will be food and craft vendors, beer/wine/liquor vendors, and live musical entertainment.
+Aside from the daily live carving, there will be food and craft vendors and beer/wine/liquor vendors.  
+<br>
+Friday and Saturday will have live musical entertainment.  
+<br>
+Ridgway Public Library will host a story hour and craft on Saturday.  
 
 ### What happens if it rains?
 The event is rain or shine. Of course we're hoping for shine!<br><br>  
