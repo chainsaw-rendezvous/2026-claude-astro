@@ -51,7 +51,7 @@
                 "link": "https://facebook.com/BearCreekWines"
             }
         },
-        "logo": "FAILED(Temporaryfilecouldnotbemoved.)"
+        "logo": false
     },
     {
         "organization": "Big Rail Brewing",
@@ -392,14 +392,14 @@
                 "link": "https://www.instagram.com/inked_bythegarden"
             }
         },
-        "logo": "FAILED(Temporaryfilecouldnotbemoved.)"
+        "logo": false
     },
     {
         "organization": "J&C Brick Oven LLC",
         "type": "Food",
         "description": "Wood fired pizza, nachos, steak hoagie, dessert pizzas",
         "payment": "Cash and Cards",
-        "logo": "FAILED(Temporaryfilecouldnotbemoved.)"
+        "logo": false
     },
     {
         "organization": "Jim's Trinket Store",
@@ -480,7 +480,7 @@
                 "link": "https://instagram.com/lostinthewildsbrewing"
             }
         },
-        "logo": "FAILED(Temporaryfilecouldnotbemoved.)"
+        "logo": false
     },
     {
         "organization": "Mama Juice Mountain Magic",
@@ -526,7 +526,7 @@
         "organization": "PA Great Outdoors Visitors Bureau",
         "type": "Retail",
         "description": "Local tourist information.",
-        "payment": "Cash only",
+        "payment": false,
         "links": {
             "url": {
                 "icon": "fa-solid fa-globe",
@@ -537,7 +537,7 @@
                 "link": "https://www.facebook.com/visitPAGO"
             }
         },
-        "logo": "FAILED(Temporaryfilecouldnotbemoved.)"
+        "logo": false
     },
     {
         "organization": "PA Hickory Syrup",
@@ -574,7 +574,7 @@
         "organization": "Rivertown Woodgrain",
         "type": "Retail",
         "description": "Handmade wooden carvings of rivers and lakes (wall decor art), wooden cutting boards, etc.",
-        "payment": "Cash only",
+        "payment": "Cash, Paypal, Venmo",
         "links": {
             "url": {
                 "icon": "fa-solid fa-globe",

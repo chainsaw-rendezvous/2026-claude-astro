@@ -941,7 +941,7 @@
 		"city": "Indiana",
 		"state": "Pennsylvania",
 		"country": "United States",
-		"image": false,
+		"image": "william-wood.jpg",
 		"links": {
 			"Facebook": {
 			"icon": "fa-brands fa-facebook-f",

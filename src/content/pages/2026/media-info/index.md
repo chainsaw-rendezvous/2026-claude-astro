@@ -8,7 +8,27 @@ widgets:
     - event-highlights
 ---
 
-Media inquiries should be directed to Isaac McDaniel by email at isaac@zone6.online
+Media inquiries should be directed to Isaac McDaniel by email at isaac@zone6.online or at 724-259-8066.
+
+## Event Details
+
+Wednesday, April 22: 10am - 7pm  
+Thursday, April 23: 10am - 7pm  
+Friday, April 24: 10am - 7pm  
+Saturday, April 25: 10am - 5pm  
+
+### Ridgway Mills Campground
+260 W Main St
+Ridgway, PA 15853
+
+### Admission
+$5 /adult; Kids under 12 free  
+Gets you access all week  
+<br>
+An estimated 30,000 people will visit during the event
+
+### Media Photos
+[High resolution images](https://www.dropbox.com/scl/fo/6lp90md2oz491idoksjx6/AIeMA9TMSHkuLlryn2hI2vk?rlkey=k5fv2dt9b9a8wbc9qhqopjfd1&dl=0) that are free to use.
 
 ## Common Questions
 
@@ -21,8 +41,7 @@ Here is a [listing of the carvers attending in 2026](./carver-list).
 ### Where is the event happening?
 The event takes place in Ridgway, PA. All activities will take place at The Ridgway Mills. Check the [schedule](../schedule "2026 Rendezvous Schedule") for the most up-to-date listing of activities.
 
-### Do you have photos from previous events that I can use?
-Yes, you can use these [high resolution images](https://www.dropbox.com/scl/fo/6lp90md2oz491idoksjx6/AIeMA9TMSHkuLlryn2hI2vk?rlkey=k5fv2dt9b9a8wbc9qhqopjfd1&dl=0) for your media outlet.
+
 
 
 ### Are carvers selling pieces during the event?
