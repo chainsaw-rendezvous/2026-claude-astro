@@ -8,9 +8,9 @@ widgets:
     - event-highlights
 ---
 
-Media inquiries should be directed to Isaac McDaniel by email at isaac@zone6.online or at 724-259-8066.
+Media inquiries can be directed to Isaac McDaniel by email at isaac@zone6.online or at 724&#8209;259&#8209;8066.
 
-## Event Details
+## Event Dates and Times
 
 Wednesday, April 22: 10am - 7pm  
 Thursday, April 23: 10am - 7pm  
@@ -29,6 +29,15 @@ An estimated 30,000 people will visit during the event
 
 ### Media Photos
 [High resolution images](https://www.dropbox.com/scl/fo/6lp90md2oz491idoksjx6/AIeMA9TMSHkuLlryn2hI2vk?rlkey=k5fv2dt9b9a8wbc9qhqopjfd1&dl=0) that are free to use.
+
+### Carver Listing
+
+Download a list of the [carvers attending in 2026](./carver-list).
+
+### Musical Entertainment
+
+The musical guests for 2026 includes: Kallie Williams Music, Nick Forsyth, Sleep Walker, Mike DeStefano & Joe Bliskey, John Michalowski, Christopher Dale, Spicey Lemons and the Sqeeze, Zach Thompson, Tim and Squeegee
+
 
 ## Common Questions
 

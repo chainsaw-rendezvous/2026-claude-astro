@@ -16,7 +16,7 @@
 		"name-nickname": false,
 		"business": false,
 		"city": false,
-		"state": false,
+		"state": "Michigan",
 		"country": "United States",
 		"image": false,
 		"links": false
