@@ -48,10 +48,7 @@ There are over 130 carvers signed up for 2026 from all over the United States an
 Here is a [listing of the carvers attending in 2026](./carver-list).
 
 ### Where is the event happening?
-The event takes place in Ridgway, PA. All activities will take place at The Ridgway Mills. Check the [schedule](../schedule "2026 Rendezvous Schedule") for the most up-to-date listing of activities.
-
-
-
+The event takes place in Ridgway, PA. All activities will take place at The Ridgway Mills campground. Check the [schedule](../schedule "2026 Rendezvous Schedule") for the most up-to-date listing of activities.
 
 ### Are carvers selling pieces during the event?
 Yes! Carvers are selling directly to the public at their booth. These are finished pieces that are ready for display in your home. Payment methods vary from carver to carver, so be sure to ask. Most carvers are accepting credit or debit cards these days. Bring a vehicle suitable to take your selections home.

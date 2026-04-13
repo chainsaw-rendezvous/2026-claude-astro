@@ -77,6 +77,21 @@ const FB_PIXEL_ID = '614306862351411';
       gtag('js', new Date());
       gtag('config', GA_ID);
     </script>
+
+    <!-- Snap Pixel Code -->
+    <script type='text/javascript'>
+    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+    r.src=n;var u=t.getElementsByTagName(s)[0];
+    u.parentNode.insertBefore(r,u);})(window,document,
+    'https://sc-static.net/scevent.min.js');
+
+    snaptr('init', 'ca5817e9-bc52-40e2-b2dc-c9a72844779c', {});
+    snaptr('track', 'PAGE_VIEW');
+
+    </script>
+    <!-- End Snap Pixel Code -->
   </head>
   <body class="font-sans text-gray-800 bg-white">
     <script>fbq('track', 'ViewContent');</script>
