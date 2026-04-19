@@ -35,9 +35,14 @@ Arts and Crafts vendors
 Food Vendors  
 Wineries & Breweries  
 <br>
-__Seminar__
+
+#### Seminar
 
 10:00am Jason Emmons of Bear Hollow, French Lick, Indiana
+
+#### Thursday Musical Entertainment
+
+5:30 PM - 7 PM Whitefeather
 
 
 ### Friday, April 24 from 10 AM - 7 PM
@@ -56,7 +61,7 @@ Entertainment
 1:45 - 2:45 Mike DeStefano & Joe Bliskey  
 3:00 - 4:00 John Michalowski  
 4:15 - 5:00 Christopher Dale  
-5:30 - 7:00 Spicey Lemons and the Sqeeze  
+5:30 - 7:00 Spicy Lemons and The Squeeze  
 
 
 ### Saturday, April 25 from 10 AM - 5 PM
@@ -74,7 +79,7 @@ Entertainment
 #### Saturday Musical Entertainment
 
 9:45 - 10:45 Zach Thompson  
-11:00 - 12:00 Tim and Squeegee  
+11:00 - 12:00 Caleb & Irelyn
 
 
 ## Thanks to all for helping us celebrate 25 years of Chainsaw Art
