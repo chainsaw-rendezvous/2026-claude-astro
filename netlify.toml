@@ -8,40 +8,40 @@
 
 [[redirects]]
   from = "/schedule"
-  to = "/2026/schedule"
+  to = "/2027/schedule"
   status = 302
 
 [[redirects]]
   from = "/map"
-  to = "/2026/map"
+  to = "/2027/map"
   status = 302
 
 [[redirects]]
   from = "/carvers"
-  to = "/2026/carvers"
+  to = "/2027/carvers"
   status = 302
 
 [[redirects]]
   from = "/carver-info"
-  to = "/2026/carver-info"
+  to = "/2027/carver-info"
   status = 302
 
 [[redirects]]
   from = "/vendor-info"
-  to = "/2026/vendor-info"
+  to = "/2027/vendor-info"
   status = 302
 
 [[redirects]]
   from = "/vendors"
-  to = "/2026/vendor-info"
+  to = "/2027/vendor-info"
   status = 302
 
 [[redirects]]
   from = "/sponsors"
-  to = "/2026/sponsor-info"
+  to = "/2027/sponsor-info"
   status = 302
 
 [[redirects]]
   from = "/media"
-  to = "/2026/media-info"
+  to = "/2027/media-info"
   status = 302
