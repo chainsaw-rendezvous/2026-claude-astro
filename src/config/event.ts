@@ -1,19 +1,19 @@
 export const event = {
-  year: 2026,
-  name: '2026 Chainsaw Carvers Rendezvous',
-  startDate: '2026-04-22',
-  endDate: '2026-04-25',
-  displayDates: 'April 22\u00a0\u2013\u00a025, 2026',
+  year: 2027,
+  name: '2027 Chainsaw Carvers Rendezvous',
+  startDate: '2027-04-21',
+  endDate: '2027-04-24',
+  displayDates: 'April 21\u00a0\u2013\u00a024, 2027',
   location: {
     name: 'Ridgway Mills Campground',
     address: '260 W Main St, Ridgway, PA',
     full: 'Ridgway Mills Campground, 260 West Main Street, Ridgway, PA 15853',
-    iCalFileName: '2026-rendezvous',
+    iCalFileName: '2027-rendezvous',
   },
   paths: {
-    vendorInfo: '/2026/vendor-info',
-    schedule: '/2026/schedule',
-    carvers: '/2026/carvers',
+    vendorInfo: '/2027/vendor-info',
+    schedule: '/2027/schedule',
+    carvers: '/2027/carvers',
   },
 } as const;
 
