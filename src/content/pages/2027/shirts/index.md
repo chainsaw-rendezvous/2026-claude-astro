@@ -1,0 +1,12 @@
+---
+title: Shirt Preorder
+subheader: 
+date: 2026-03-09
+widgets:
+    - content
+
+---
+
+<!-- Shirts can be [pre-ordered online](https://store.chainsawrendezvous.org/carvers/) -->
+
+Shirts will be available for pre-order soon.

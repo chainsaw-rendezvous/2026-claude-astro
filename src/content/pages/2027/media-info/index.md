@@ -1,0 +1,76 @@
+---
+preheader: 
+title: Media Information
+subheader: 
+date: 2026-03-09
+widgets:
+    - content
+    - event-highlights
+---
+
+Media inquiries can be directed to Isaac McDaniel by email at isaac@zone6.online or at 724&#8209;259&#8209;8066.
+
+## Event Dates and Times
+
+Wednesday, April 21: 10am - 7pm  
+Thursday, April 22: 10am - 7pm  
+Friday, April 23: 10am - 7pm  
+Saturday, April 24: 10am - 5pm  
+
+### Ridgway Mills Campground
+260 W Main St
+Ridgway, PA 15853
+
+### Admission
+$5 /adult; Kids under 12 free  
+Gets you access all week  
+<br>
+An estimated 30,000 people will visit during the event
+
+### Media Photos
+[High resolution images](https://www.dropbox.com/scl/fo/6lp90md2oz491idoksjx6/AIeMA9TMSHkuLlryn2hI2vk?rlkey=k5fv2dt9b9a8wbc9qhqopjfd1&dl=0) that are free to use.
+
+### Carver Listing
+
+<!-- Download a list of the [carvers attending in 2026](./carver-list). -->
+
+### Musical Entertainment
+
+The musical guests for 2027 has not been announced yet.
+
+
+## Common Questions
+
+<!-- ### How many carvers are participating? Where are they from?
+There are over 130 carvers signed up for 2026 from all over the United States and multiple countries including Canada, Germany, and the United Kingdom.  
+<br>
+
+Here is a [listing of the carvers attending in 2026](./carver-list). -->
+
+### Where is the event happening?
+The event takes place in Ridgway, PA. All activities will take place at The Ridgway Mills campground. Check the [schedule](../schedule "2026 Rendezvous Schedule") for the most up-to-date listing of activities.
+
+### Are carvers selling pieces during the event?
+Yes! Carvers are selling directly to the public at their booth. These are finished pieces that are ready for display in your home. Payment methods vary from carver to carver, so be sure to ask. Most carvers are accepting credit or debit cards these days. Bring a vehicle suitable to take your selections home.
+
+### Will there be an auction at this year's Rendezvous?
+An auction will be held on Saturday afternoon following a quick carve event. Pieces created during that quick carve will be auctioned off. Credit cards will be accepted for payment at the auction.
+
+Pieces that carvers work on throughout the week are not being auctioned off. Inquire with the carver directly for their plans for that piece.
+
+### Are there other activities happening during the event?
+Aside from the daily live carving, there will be food and craft vendors and beer/wine/liquor vendors.  
+<br>
+Friday and Saturday will have live musical entertainment.  
+<br>
+Ridgway Public Library will host a story hour and craft on Saturday.  
+
+### What happens if it rains?
+The event is rain or shine. Of course we're hoping for shine!<br><br>  
+
+Current conditions in Ridgway, PA<br>
+  
+<a class="weatherwidget-io" href="https://forecast7.com/en/41d42n78d73/ridgway/?unit=us" data-label_1="RIDGWAY" data-label_2="WEATHER" data-theme="original" >RIDGWAY WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
